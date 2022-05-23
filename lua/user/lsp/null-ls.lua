@@ -11,9 +11,10 @@ local diagnostics = null_ls.builtins.diagnostics
 null_ls.setup({
 	debug = false,
 	sources = {
-		formatting.prettier.with({ extra_args = { "--no-semi", "--single-quote", "--jsx-single-quote" } }),
-		formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.prettier.with({ prefer_local = "node_modules/.bin" }),
+		-- formatting.black.with({ prefer_local = true, extra_args = { "--fast" } }),
+		formatting.autopep8.with({ prefer_local = true }),
 		formatting.stylua,
-    -- diagnostics.flake8
+		-- diagnostics.flake8
 	},
 })
