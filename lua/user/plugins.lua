@@ -48,10 +48,10 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
-	use("akinsho/bufferline.nvim")
+	use({"akinsho/bufferline.nvim", branch = 'main'})
 	use("moll/vim-bbye")
 	use("nvim-lualine/lualine.nvim")
-	use("akinsho/toggleterm.nvim")
+	use({"akinsho/toggleterm.nvim", branch = 'main'})
 	use("ahmedkhalf/project.nvim")
 	use("lewis6991/impatient.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
@@ -61,7 +61,10 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-	use("lunarvim/darkplus.nvim")
+	use("Mofiqul/dracula.nvim")
+	use("rebelot/kanagawa.nvim")
+	use("EdenEast/nightfox.nvim")
+	use("folke/tokyonight.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -100,14 +103,24 @@ return packer.startup(function(use)
 	-- Github Copilot
 	use("github/copilot.vim")
 
+	-- Trouble
+	use({
+		"folke/trouble.nvim",
+		requires = "kyazdani42/nvim-web-devicons",
+	})
+
 	-- AutoSave
 	use("Pocco81/AutoSave.nvim")
+
+	-- Glow (Markdown preview)
+	-- use({ "ellisonleao/glow.nvim" })
 
 	-- Hop (EasyMotion)
 	use({
 		"phaazon/hop.nvim",
 		branch = "v1", -- optional but strongly recommended
 	})
+
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
