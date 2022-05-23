@@ -1,8 +1,8 @@
 vim.cmd [[
 try
-  colorscheme kanagawa
+  colorscheme darkplus
 catch /^Vim\%((\a\+)\)\=:E185/
-  colorscheme kanagawa
+  colorscheme darkplus
   set background=dark
 endtry
 ]]
