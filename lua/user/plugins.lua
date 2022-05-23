@@ -61,6 +61,7 @@ return packer.startup(function(use)
 
 	-- Colorschemes
 	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
+  use "lunarvim/darkplus.nvim"
 	use("Mofiqul/dracula.nvim")
 	use("rebelot/kanagawa.nvim")
 	use("EdenEast/nightfox.nvim")
@@ -122,6 +123,8 @@ return packer.startup(function(use)
 	})
 
   use "rcarriga/nvim-notify"
+
+  use "karb94/neoscroll.nvim"
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
