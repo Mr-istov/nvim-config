@@ -129,11 +129,13 @@ cmp.setup({
 		behavior = cmp.ConfirmBehavior.Replace,
 		select = false,
 	},
-	documentation = {
-		border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-		max_height = 24,
-		max_width = 106,
-		winhighlight = "FloatBorder:NormalFloat",
+	window = {
+		documentation = {
+			border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
+			max_height = 24,
+			max_width = 106,
+			winhighlight = "FloatBorder:NormalFloat",
+		},
 	},
 	experimental = {
 		ghost_text = false,
