@@ -48,10 +48,10 @@ return packer.startup(function(use)
 	use("numToStr/Comment.nvim") -- Easily comment stuff
 	use("kyazdani42/nvim-web-devicons")
 	use("kyazdani42/nvim-tree.lua")
-	use({"akinsho/bufferline.nvim", branch = 'main'})
+	use({ "akinsho/bufferline.nvim", branch = "main" })
 	use("moll/vim-bbye")
 	use("nvim-lualine/lualine.nvim")
-	use({"akinsho/toggleterm.nvim", branch = 'main'})
+	use({ "akinsho/toggleterm.nvim", branch = "main" })
 	use("ahmedkhalf/project.nvim")
 	use("lewis6991/impatient.nvim")
 	use("lukas-reineke/indent-blankline.nvim")
@@ -60,12 +60,9 @@ return packer.startup(function(use)
 	use("folke/which-key.nvim")
 
 	-- Colorschemes
-	-- use "lunarvim/colorschemes" -- A bunch of colorschemes you can try out
-  use "lunarvim/darkplus.nvim"
+	use("lunarvim/darkplus.nvim")
 	use("Mofiqul/dracula.nvim")
 	use("rebelot/kanagawa.nvim")
-	use("EdenEast/nightfox.nvim")
-	use("folke/tokyonight.nvim")
 
 	-- cmp plugins
 	use("hrsh7th/nvim-cmp") -- The completion plugin
@@ -122,13 +119,13 @@ return packer.startup(function(use)
 		branch = "v1", -- optional but strongly recommended
 	})
 
-  use "rcarriga/nvim-notify"
+	use("rcarriga/nvim-notify")
 
-  use "karb94/neoscroll.nvim"
+	use("karb94/neoscroll.nvim")
 
-  use "folke/todo-comments.nvim"
+	use("folke/todo-comments.nvim")
 
-  use "unblevable/quick-scope"
+	use("unblevable/quick-scope")
 
 	-- Automatically set up your configuration after cloning packer.nvim
 	-- Put this at the end after all plugins
